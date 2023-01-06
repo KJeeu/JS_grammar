@@ -1,4 +1,16 @@
 //object = {key : value};
+/*
+    접근
+        test.name
+        test['name']
+    추가
+        test.gender = 'm';
+        test['gender'] = 'm';
+    삭제
+        delete test.gender;
+    프로퍼티 존재 여부 확인
+        'gender' in test; //false
+*/
 const jeeu = {};
 const jeeu2 = new Object();
 
@@ -40,6 +52,16 @@ for (key of array){
     console.log(key);
 }
 
+//for...in
+const Mike = {
+    name: "mike",
+    age: 30
+};
+
+for (i in Mike){
+    console.log(Mike[i]);
+}
+
 //cloning
 const user = {name:'user', age: 33};
 const user2 = user;
@@ -56,3 +78,12 @@ const ex1 = {color:'red'};
 const ex2 = {color:'blue', size:'big'};
 const mixed = Object.assign({}, ex1, ex2); //-> blue, big (뒤가 앞을 덮음)
 console.log(mixed);
+
+//method
+const superman = {
+    name : 'mini',
+    age : 33,
+    fly(){ //method
+        console.log('날라갑니다');
+    }
+}

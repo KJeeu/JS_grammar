@@ -1,4 +1,8 @@
-//함수
+/*함수
+    한번에 한작업에 집중
+    어떤 동작인지 알 수 있게 네이밍
+*/
+
 function printHello(){
     console.log('hello');
 }
@@ -27,3 +31,29 @@ console.log(result);
 
 //위의 return 간결하게 하단과 같이 수정 가능
 const sum2 = (a,b) => a+b;
+
+console.clear();
+
+//default value
+function sayHello(name){
+    let newName = name || 'jeeu';
+    let msg = `hi, ${newName}`
+    console.log(msg);
+}
+
+function sayHello(name='jeeu'){
+    let msg = `hi, ${name}`
+    console.log(msg);
+}
+
+sayHello(); //-> hi, jeeu / or는 마지막 true반환
+sayHello('jane');
+
+//return
+function showError(){
+    alert('에러 발생');
+    return;
+    alert('작동하지 않음');
+}
+
+console.log(showError());
