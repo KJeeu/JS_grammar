@@ -71,6 +71,17 @@ const students = [
     const result = students.filter((student) => student.enrolled);
     console.log(result);
 }
+
+//find(), filter() 차이 : find()는 최초의 1개만 반환하지만 filter()는 해당하는 모든 true값 반환
+{const test = [1,2,3,4,5,6];
+
+const result = test.filter((item) => {
+   return item % 2 === 0; 
+});
+
+console.log(result);
+}
+
 console.clear();
 // Q7. 점수만 배열로 생성 >> map()
 {
@@ -89,6 +100,8 @@ console.clear();
 
 
 // Q9. 평균 점수 >>reduce() 값 누적 >> reduce
+//인수로 함수를 받음
+//(누적 계산값, 현재값) => {return 계산값};
 {
     // const result = students.reduce((prev, curr) => prev+curr.score, 0);
     const result = students.reduce((prev, curr) => {
@@ -96,7 +109,7 @@ console.clear();
         console.log(prev);
         console.log(curr);
         return prev+curr.score;
-    }, 0);
+    }, 0); //초기값 0
     console.log(result / students.length);
 }
 
