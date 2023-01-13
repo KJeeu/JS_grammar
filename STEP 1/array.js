@@ -11,7 +11,6 @@ console.log(fruits.length);
 console.log(fruits[0]);
 console.log(fruits.length - 1); //마지막 인덱스 가져오기
 
-console.clear();
 //3. 배열 안 전체 출력
 //for
 for (let i=0; i<fruits.length; i++){
@@ -82,7 +81,6 @@ console.log(typeof userList); //object
 console.log(Array.isArray(user)); //false
 console.log(Array.isArray(userList)); //true
 
-console.clear();
 //sort() : 배열 재정렬
 let test = [1,3,5,4,2];
 test.sort();
@@ -92,11 +90,13 @@ test = [27, 8, 5, 13];
 test.sort();
 console.log(test); // [13, 27, 5, 8]
 
-test.sort((a,b) => a-b);
+test.sort((a,b) => a-b); //오름차순
 console.log(test); //[5, 8, 13, 27]
 // 8, 27, 5, 13
 // 5, 8, 27, 13
 // 5, 8, 13, 27
+
+test.sort((a,b) =>b-a); //내림차순
 
 //굳이 위의 번거로운 방식 대신 Lodash 라이브러리 사용
 //_.sortBy(test);

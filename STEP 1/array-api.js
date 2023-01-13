@@ -26,7 +26,6 @@
 // Q4. 첫번째, 두번째를 제외한 배열 생성 >> splice() : 배열 자체 수정
 {
     const array = [1,2,3,4,5];
-
     const result = array.splice(0, 2);
     console.log(result); //1,2
     console.log(array); //3,4,5
@@ -35,8 +34,8 @@
 // Q4-1. 첫번째, 두번째를 제외한 '새로운' 배열 생성 >> slice() : 배열에서 원하는 부분만 가져옴
 {
     const array = [1,2,3,4,5];
-
     const result = array.slice(2, 5);
+    console.log(array); // 1,2,3,4,5
     console.log(result); //3,4,5
 }
 
@@ -82,7 +81,6 @@ const result = test.filter((item) => {
 console.log(result);
 }
 
-console.clear();
 // Q7. 점수만 배열로 생성 >> map()
 {
     const result = students.map((student) => student.score);
