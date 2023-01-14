@@ -29,8 +29,6 @@ json = JSON.stringify(rabbit, (key,value) => {
 })
 console.log(json);
 
-
-// console.clear();
 // 2. JSON -> Object
 //parse
 json = JSON.stringify(rabbit);

@@ -5,7 +5,7 @@
 */
 
 // const name1 = prompt("이름을 입력하세요");
-// const name1 = prompt("이름을 입력하세요", "jeeu");
+// const name2 = prompt("이름을 입력하세요", "jeeu");
 // alert(`환영합니다, ${name1}님`);
 
 const isAdult = confirm("당신은 성인입니까?");
