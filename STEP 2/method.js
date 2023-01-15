@@ -25,4 +25,3 @@ console.log(test);
 //5. Object.fromEntries() : 키/값 배열-> 객체로
 console.log(Object.fromEntries(test));
 
-//6. 
