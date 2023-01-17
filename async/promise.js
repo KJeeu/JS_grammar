@@ -8,8 +8,7 @@ const pr = new Promise((resolve, reject) => {
 
 /*  성공시 3초뒤
 state : pending(대기) -> fulfilled(이행됨)
-result : undefined -> result('
- * ok')
+result : undefined -> result('ok')
 
 실패시
 

@@ -1,7 +1,7 @@
 let users = ['mike', 'tom', 'jane']
 let [user1, user2, user3] = users;
 
-//let user1 - users[0]
+//let user1 = users[0]
 
 console.log(user1);
 console.log(user3);
